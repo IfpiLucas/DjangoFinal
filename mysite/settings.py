@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'Despesas',
     'AProfPage',
     'Festas',
+    'Revistas',
 ]
 
 MIDDLEWARE = [
