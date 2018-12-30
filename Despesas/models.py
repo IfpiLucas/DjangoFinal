@@ -15,3 +15,7 @@ class Despesa(models.Model):
     vencimento = models.DateField()
     quitado = models.BooleanField()
     campo_temp = datetime.timedelta(days=2)
+
+
+    def __srt__(self):
+        return self.data_criaçao

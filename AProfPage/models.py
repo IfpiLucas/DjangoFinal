@@ -9,7 +9,7 @@ class Curso(models.Model):
 class Professor(models.Model):
     nome = models.CharField(max_length=100)
     telefone = models.CharField(max_length=50)
-    valor_hora_aula = models.FloatField()
+    valor_hora_aula = models.DecimalField(decimal_places=2, max_digits=6)
 
 class Turma(models.Model):
     data_inicio = models.DateField()
